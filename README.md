@@ -5,6 +5,9 @@
 3) vyzkošet docker podle https://hub.docker.com/r/pytorch/pytorch/tags  
 docker pull pytorch/pytorch:latest
 docker exec -it pytorch/pytorch:latest bash
+nefunguje - je potřeba ještě něco doinstalovat aby jel docker pro cudu
+
+
 
 
    - nainstaloval sem si windows terminal - lepší než standardní příkazová řádka
