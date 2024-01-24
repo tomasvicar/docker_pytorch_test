@@ -4,10 +4,15 @@
 2) nainstalovat docker a powolit ho pro wsl podle https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers
 3) chmod +x start_docker.sh && ./start_docker.sh
 4) v novém terminalu code .
-5) pak dát vlevo dole a ve vscode (modre tlacitko s wsl) a Atach to running container
-6) doinstalovat extensions (je tu extension recommendation file), nechápu které zůstanou z windows a které ne...
+5) je potřeba extension docker a remote developmet (nebo jen dev containers z toho)
+6) pak dát vlevo dole a ve vscode (modre tlacitko s wsl) a Atach to running container
+7) doinstalovat extensions (je tu extension recommendation file), nechápu které zůstanou z windows a které ne...
 
-debugging - tohle nakonec není treba:
+- existující image a containery se dají hezky mazat z vscode ve wsl modu pres docker zalozku
+- docker ps -a  ;docker rm name
+- docker images; docker image rm id
+
+## debugging - tohle nakonec není treba:
 - nainstaloval sem si windows terminal - lepší než standardní příkazová řádka
 
 - vyzkošet docker podle https://hub.docker.com/r/pytorch/pytorch/tags
