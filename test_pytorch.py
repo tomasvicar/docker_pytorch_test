@@ -5,5 +5,4 @@ b = a.cuda()
 print(b)
 #added in docker
 #added in docker 2
-
 #added in docker 3
