@@ -2,8 +2,12 @@
 
 1) nainstalované WSL2 https://github.com/tomasvicar/Jax_wsl2_cuda
 2) nainstalovat docker a powolit ho pro wsl podle https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers
+3) chmod +x start_docker.sh && ./start_docker.sh
+4) v novém terminalu code .
+5) pak dát vlevo dole a ve vscode (modre tlacitko s wsl) a Atach to running container
+6) doinstalovat extensions (je tu extension recommendation file), nechápu které zůstanou z windows a které ne...
 
-debugging:
+debugging - tohle nakonec není treba:
 - nainstaloval sem si windows terminal - lepší než standardní příkazová řádka
 
 - vyzkošet docker podle https://hub.docker.com/r/pytorch/pytorch/tags
@@ -38,19 +42,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 - teď vyzkouším dockerfile
 
-3) naklonuj docker file podle tohoto repa
-4) docker build -t my_custom_pytorch_image .
-5) docker run -it --gpus all --name my_pytorch_container my_custom_pytorch_image
-6) z jine comandline linuxu spust code .
-7) nainstaluj extensin pro docker a v praco se muzes připojit na bezici containery
-8) ale jak z toho přímo spoustet kód? jde tam spustit bash ve vscode
+  3) naklonuj docker file podle tohoto repa
+  4) docker build -t my_custom_pytorch_image .
+  5) docker run -it --gpus all --name my_pytorch_container my_custom_pytorch_image
+  6) z jine comandline linuxu spust code .
+  7) nainstaluj extensin pro docker a v praco se muzes připojit na bezici containery
+  8) ale jak z toho přímo spoustet kód? jde tam spustit bash ve vscode
 
 - zkousel jsem nějaké automatické vytvoření dockeru s devcontainer.json ale tam nešlo dát vlastní dockerfile jen se spolehnout na vscode, kde zase nefungovala cuda
-
-S tímhe repozitářem jde jen (místo 3-8):
-
-chmod +x start_docker.sh
-
-./start_docker.sh
-
-pak dát vlevo dole a ve vscode (modre wsl) a Atach to running container
