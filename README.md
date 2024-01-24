@@ -25,4 +25,15 @@ debugging:
 
 - tak zkusíme docker run -it --gpus all --name my_pytorch_container pytorch/pytorch:latest bash
 - https://www.youtube.com/watch?v=CO43b6XWHNI youtube kde to intaluje postru z linuxu, teď už asi jede i z windows
+- 
+```
+root@fa49a8a50315:/workspace# python
+Python 3.10.13 (main, Sep 11 2023, 13:44:35) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import torch
+>>> a = torch.ones(5)
+>>> b = a.cuda()
+>>>
+```
 
+- teď vyzkouším dockerfile
