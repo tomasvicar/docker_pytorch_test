@@ -37,3 +37,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 - teď vyzkouším dockerfile
+
+3) naklonuj docker file podle tohoto repa
+4) docker build -t my_custom_pytorch_image .
+5) docker run -it --gpus all --name my_pytorch_container my_custom_pytorch_image
+6) z jine comandline linuxu spust code .
+7) nainstaluj extensin pro docker a v praco se muzes připojit na bezici containery
+8) ale jak z toho přímo spoustet kód? jde tam spustit bash ve vscode
