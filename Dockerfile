@@ -4,8 +4,7 @@ FROM pytorch/pytorch:latest
 # Set the working directory in the container to /workspace
 WORKDIR /workspace
 
-
-# Install Python, Jupyter and Git
+# Install Python, Jupyter, and Git
 RUN apt-get update && \
     apt-get install -y git && \
     pip install --no-cache-dir jupyter && \
@@ -15,5 +14,8 @@ RUN apt-get update && \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Command to run when starting the container
-CMD ["bash"]
+# Expose the port Jupyter will run on
+EXPOSE 8888
+
+# Start Jupyter Notebook
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
