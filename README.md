@@ -12,6 +12,10 @@
 - docker ps -a  ;docker rm name
 - docker images; docker image rm id
 
+## vytvořit jupyter server a připojit se na něj - funguje taky ale jen interactive python
+na branchu https://github.com/tomasvicar/docker_pytorch_test/tree/jupyter_server
+
+
 ## debugging - tohle nakonec není treba:
 - nainstaloval sem si windows terminal - lepší než standardní příkazová řádka
 
