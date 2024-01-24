@@ -44,3 +44,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 6) z jine comandline linuxu spust code .
 7) nainstaluj extensin pro docker a v praco se muzes připojit na bezici containery
 8) ale jak z toho přímo spoustet kód? jde tam spustit bash ve vscode
+
+- zkousel jsem nějaké automatické vytvoření dockeru s devcontainer.json ale tam nešlo dát vlastní dockerfile jen se spolehnout na vscode, kde zase nefungovala cuda
+
+S tímhe repozitářem jde jen (místo 3-8):
+
+chmod +x start_docker.sh
+
+./start_docker.sh
+
+pak dát vlevo dole a ve vscode (modre wsl) a Atach to running container
