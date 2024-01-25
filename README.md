@@ -7,4 +7,4 @@
 5) mít jupyter extension a napravo vybrat run interactive, zeptá se na kernel tak pripojit k existujícímu, dát url podle toho co vyplivl docker při spuštění (je tam url s tokenem)
 
 
-pak jen docker run -it my_custom_pytorch jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root 
+pak jen docker run -it -p 8888:8888 -v $(pwd):/workspace my_custom_pytorch
